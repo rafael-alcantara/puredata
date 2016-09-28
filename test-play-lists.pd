@@ -1,23 +1,34 @@
-#N canvas 833 315 450 300 10;
-#X obj 188 144 gen-rnd;
-#X msg 228 120 12;
-#X obj 165 257 play-lists, f 26;
-#X obj 339 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 584 690 450 300 10;
+#X obj 124 169 gen-rnd;
+#X msg 163 145 12;
+#X obj 75 257 play-lists, f 38;
+#X obj 299 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 405 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 345 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 166 45 t b b b, f 19;
-#X obj 153 15 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 37 36 t b b b, f 19;
+#X obj 21 4 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 250 162 100 150 200 250 300;
-#X connect 0 0 2 1;
-#X connect 0 0 2 2;
+#X msg 289 125 100 150 200 250 300;
+#X obj 207 147 gen-rnd;
+#X msg 246 122 31;
+#X msg 72 172 1000;
+#X msg 113 215 8;
+#X connect 0 0 2 3;
 #X connect 1 0 0 1;
-#X connect 3 0 2 4;
-#X connect 4 0 2 5;
+#X connect 3 0 2 6;
+#X connect 4 0 2 7;
 #X connect 5 0 2 0;
 #X connect 5 1 0 0;
+#X connect 5 1 8 0;
+#X connect 5 1 10 0;
+#X connect 5 1 11 0;
 #X connect 5 2 7 0;
 #X connect 5 2 1 0;
+#X connect 5 2 9 0;
 #X connect 6 0 5 0;
-#X connect 7 0 2 3;
+#X connect 7 0 2 5;
+#X connect 8 0 2 4;
+#X connect 9 0 8 1;
+#X connect 10 0 2 1;
+#X connect 11 0 2 2;
