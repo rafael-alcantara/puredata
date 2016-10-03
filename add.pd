@@ -1,4 +1,4 @@
-#N canvas 689 110 552 428 10;
+#N canvas 160 622 552 428 10;
 #X obj 202 131 f 0;
 #X obj 172 131 + 0;
 #X floatatom 172 180 5 0 0 0 - - -, f 5;
@@ -19,6 +19,7 @@
 #X obj 339 189 + 1;
 #X obj 339 309 outlet;
 #X text 320 328 Max sum reached;
+#X floatatom 351 206 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 1;
 #X connect 1 0 0 0;
 #X connect 1 0 2 0;
@@ -37,3 +38,4 @@
 #X connect 15 1 18 0;
 #X connect 16 0 12 0;
 #X connect 17 0 15 1;
+#X connect 17 0 20 0;

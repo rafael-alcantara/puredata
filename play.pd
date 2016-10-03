@@ -1,4 +1,4 @@
-#N canvas 836 234 521 434 10;
+#N canvas 644 510 521 434 10;
 #X obj -22 -35 metro;
 #X obj 51 -1 f 64;
 #X obj 110 67 noteout;
@@ -10,25 +10,25 @@
 #X obj -22 -137 inlet;
 #X obj 179 -137 inlet;
 #X obj 236 -137 inlet;
-#X obj 32 115 outlet;
 #X obj 205 116 outlet;
 #X text 118 -156 pitch;
 #X text 177 -156 velocity;
 #X text 243 -156 duration;
-#X text 12 136 pitch (1 bang);
-#X text 173 135 velocity (2 bangs);
 #X obj 337 -137 inlet;
 #X text 335 -156 stop;
 #X text -22 -156 start;
 #X msg 337 -108 stop;
 #X obj 43 -137 inlet;
 #X text 37 -156 channel;
+#X obj 205 66 moses 1;
+#X obj 205 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 173 135 note off (bang);
 #X connect 0 0 1 0;
 #X connect 1 0 5 0;
-#X connect 1 0 11 0;
 #X connect 5 0 2 0;
 #X connect 5 1 2 1;
-#X connect 5 1 12 0;
+#X connect 5 1 21 0;
 #X connect 7 0 1 1;
 #X connect 7 0 4 0;
 #X connect 8 0 0 0;
@@ -37,6 +37,8 @@
 #X connect 10 0 3 0;
 #X connect 10 0 5 2;
 #X connect 10 0 0 1;
-#X connect 18 0 21 0;
-#X connect 21 0 0 0;
-#X connect 22 0 2 2;
+#X connect 15 0 18 0;
+#X connect 18 0 0 0;
+#X connect 19 0 2 2;
+#X connect 21 0 22 0;
+#X connect 22 0 11 0;
