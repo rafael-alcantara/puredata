@@ -1,4 +1,4 @@
-#N canvas 18 546 1166 492 10;
+#N canvas 12 555 1166 492 10;
 #X floatatom 234 45 5 0 0 0 - - -, f 5;
 #X obj 256 297 play, f 16;
 #X obj 943 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -49,10 +49,6 @@
 #X obj 557 21 list-item;
 #X floatatom 729 -45 5 0 0 0 - - -, f 5;
 #X floatatom 776 -45 5 0 0 0 - - -, f 5;
-#X obj 723 -9 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 770 0 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
 #X connect 0 0 1 2;
 #X connect 1 0 14 0;
 #X connect 2 0 1 5;
@@ -88,10 +84,8 @@
 #X connect 31 0 32 0;
 #X connect 32 0 33 1;
 #X connect 32 0 43 0;
-#X connect 32 0 45 0;
 #X connect 32 1 34 1;
 #X connect 32 1 44 0;
-#X connect 32 1 46 0;
 #X connect 33 0 37 0;
 #X connect 33 1 2 0;
 #X connect 33 1 9 0;
