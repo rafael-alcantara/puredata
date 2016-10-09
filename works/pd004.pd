@@ -1,0 +1,38 @@
+#N canvas 688 131 1200 569 10;
+#X obj 149 129 gen-fun;
+#X obj 127 25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 211 124 expr sin($f1)+sin(2*$f1^2)+sin(3*$f1^3)+sin($f1^5)+sin($f1^13)
+, f 59;
+#X obj 149 186 fit, f 8;
+#X obj 68 168 print orig;
+#X obj 68 208 print fit;
+#X msg 611 124 100;
+#X msg 658 124 250;
+#X obj 151 313 play-lists, f 31;
+#X obj 127 53 t b b b;
+#X obj 407 362 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 155 107 53;
+#X msg 178 164 52;
+#X msg 210 164 76;
+#X connect 0 0 3 0;
+#X connect 0 0 4 0;
+#X connect 0 1 2 0;
+#X connect 1 0 9 0;
+#X connect 2 0 0 2;
+#X connect 3 0 5 0;
+#X connect 3 0 8 3;
+#X connect 6 0 8 5;
+#X connect 7 0 8 7;
+#X connect 9 0 8 0;
+#X connect 9 1 0 0;
+#X connect 9 2 11 0;
+#X connect 9 2 12 0;
+#X connect 9 2 13 0;
+#X connect 9 2 6 0;
+#X connect 9 2 7 0;
+#X connect 10 0 8 11;
+#X connect 11 0 0 1;
+#X connect 12 0 3 1;
+#X connect 13 0 3 2;
