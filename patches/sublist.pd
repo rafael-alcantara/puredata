@@ -1,0 +1,18 @@
+#N canvas 615 170 419 252 10;
+#X obj 30 133 zl slice;
+#X obj 75 170 zl slice;
+#X obj 75 99 - 1;
+#X obj 30 33 inlet;
+#X obj 75 33 inlet;
+#X obj 120 33 inlet;
+#X obj 75 201 outlet;
+#X text 203 35 inlets;
+#X text 202 56 0: original list;
+#X text 202 71 1: starting index (one-based);
+#X text 203 86 2: length of resulting sub-list;
+#X connect 0 1 1 0;
+#X connect 1 0 6 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 5 0 1 1;
