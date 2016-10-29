@@ -14,8 +14,11 @@ Patches to play notes:
 Filters to apply to lists in order to get modified versions:
 - sublist: get a fragment of the original list
 - fit: make the values fit some boundaries (scale [+ transport])
+- sublist: get a fragment of an existing list
+- augment: expand individual values to several by using expr
 
 Utility patches:
 - add: adds values to an accumulated sum up to a limit
 - count: counts messages up to a limit
+- list-concat: concatenate items/lists into a bigger list
 
