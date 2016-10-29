@@ -1,0 +1,14 @@
+#N canvas 327 149 450 300 10;
+#X obj 157 125 list-concat;
+#X obj 157 147 print;
+#X obj 118 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 181 46 1 2 3 4;
+#X msg 206 69 9 8 7 6;
+#X obj 293 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 0 1;
+#X connect 5 0 0 2;
