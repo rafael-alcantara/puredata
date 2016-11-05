@@ -1,4 +1,4 @@
-#N canvas 566 87 1012 817 10;
+#N canvas 562 93 1105 942 10;
 #X msg 242 110 69 68 69 66 68 64 66 66;
 #X msg 421 111 100;
 #X obj 205 175 play-lists, f 37;
@@ -12,7 +12,7 @@
 #X obj 144 41 t b b b;
 #X obj 628 77 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj -40 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj -40 480 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 258 383 list-math - 12;
 #X msg 220 422 4;
@@ -53,16 +53,91 @@
 #X obj 359 784 print seq3;
 #X obj 373 702 expr $f2-$f2*($f4-$f1-1)/$f4;
 #X obj 364 452 expr $f2-$f2*$f1/$f4;
+#N canvas 104 575 971 410 seq3 1;
+#X obj 28 22 inlet start;
+#X obj 890 20 inlet stop;
+#X obj 836 220 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 251 370 play-lists, f 64;
+#X obj 254 268 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 627 300 expr $f2/$f4;
+#X msg 115 328 127;
+#X obj 123 369 ctlout 10;
+#X obj 642 82 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 90 213 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 265 193 augment, f 16;
+#X obj 609 270 augment, f 16;
+#X obj 481 240 augment, f 16;
+#X msg 234 302 24000;
+#X msg 275 301 8;
+#X obj 734 20 inlet config;
+#X obj 154 133 t b b, f 6;
+#X obj 206 19 inlet pitches;
+#X obj 353 20 inlet velocities;
+#X obj 596 21 inlet durations;
+#X obj 245 156 list-math + 24;
+#X msg 470 135 5;
+#X obj 501 266 expr $f2+0*$f4;
+#X obj 11 231 print seq4, f 22;
+#X obj 287 222 expr $f2+sin(6.2832*$i1/($i4-1));
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 11;
+#X connect 4 0 14 0;
+#X connect 4 0 13 0;
+#X connect 5 0 11 2;
+#X connect 6 0 7 0;
+#X connect 8 0 21 0;
+#X connect 8 0 16 0;
+#X connect 9 0 7 0;
+#X connect 10 0 3 3;
+#X connect 10 0 23 0;
+#X connect 10 1 24 0;
+#X connect 10 2 24 1;
+#X connect 10 3 24 2;
+#X connect 10 4 24 3;
+#X connect 11 0 3 7;
+#X connect 11 1 5 0;
+#X connect 11 2 5 1;
+#X connect 11 3 5 2;
+#X connect 11 4 5 3;
+#X connect 12 0 3 5;
+#X connect 12 1 22 0;
+#X connect 12 2 22 1;
+#X connect 12 3 22 2;
+#X connect 12 4 22 3;
+#X connect 13 0 3 1;
+#X connect 14 0 3 2;
+#X connect 14 0 7 2;
+#X connect 15 0 8 0;
+#X connect 16 0 6 0;
+#X connect 16 1 4 0;
+#X connect 17 0 20 0;
+#X connect 18 0 12 0;
+#X connect 19 0 11 0;
+#X connect 20 0 10 0;
+#X connect 21 0 10 1;
+#X connect 21 0 11 1;
+#X connect 21 0 12 1;
+#X connect 22 0 12 2;
+#X connect 24 0 10 2;
+#X restore 253 855 pd seq3;
 #X connect 0 0 2 3;
 #X connect 0 0 11 0;
 #X connect 0 0 15 0;
+#X connect 0 0 44 1;
 #X connect 1 0 2 5;
 #X connect 1 0 31 0;
 #X connect 1 0 39 0;
+#X connect 1 0 44 2;
 #X connect 3 0 8 0;
 #X connect 4 0 2 11;
 #X connect 4 0 7 11;
 #X connect 4 0 14 11;
+#X connect 4 0 44 5;
 #X connect 5 0 2 2;
 #X connect 6 0 32 2;
 #X connect 8 0 10 0;
@@ -75,9 +150,11 @@
 #X connect 8 2 9 0;
 #X connect 9 0 25 0;
 #X connect 9 0 26 0;
+#X connect 9 0 44 4;
 #X connect 10 0 2 0;
 #X connect 10 0 7 0;
 #X connect 10 0 14 0;
+#X connect 10 0 44 0;
 #X connect 11 0 32 0;
 #X connect 12 0 7 2;
 #X connect 12 0 21 2;
@@ -130,6 +207,7 @@
 #X connect 36 0 2 7;
 #X connect 36 0 33 0;
 #X connect 36 0 35 0;
+#X connect 36 0 44 3;
 #X connect 37 0 7 1;
 #X connect 38 0 14 1;
 #X connect 39 0 14 5;
