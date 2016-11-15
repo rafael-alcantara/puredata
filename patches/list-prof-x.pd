@@ -1,0 +1,18 @@
+#N canvas 623 181 450 300 10;
+#X obj 148 112 list-nth 0;
+#X obj 121 74 t l l;
+#X obj 121 36 inlet;
+#X obj 205 36 inlet;
+#X obj 104 209 outlet;
+#X text 114 18 list;
+#X text 200 17 [index];
+#X text 102 228 profile of the list;
+#X text 101 254 and its [index]th element (default first);
+#X obj 104 167 list-math /;
+#X text 101 241 proportion between each item;
+#X connect 0 0 9 1;
+#X connect 1 0 9 0;
+#X connect 1 1 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 1;
+#X connect 9 0 4 0;

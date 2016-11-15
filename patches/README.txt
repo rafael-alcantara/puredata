@@ -12,10 +12,13 @@ Patches to play notes:
 - play-lists: consumes lists for pitches, velocities and durations
 
 Filters to apply to lists in order to get modified versions:
-- sublist: get a fragment of the original list
-- fit: make the values fit some boundaries (scale [+ transport])
 - sublist: get a fragment of an existing list
+- list-prof-+: creates a profile of differences re. one of the elements
+- list-prof-x: creates a profile of proportions re. one of the elements
 - augment: expand individual values to several by using expr
+- aug-prof-+: expand individual values by summing a profile
+- aug-prof-x: expand individual values by multiplying a profile
+- fit: make the values fit some boundaries (scale [+ transport])
 
 Utility patches:
 - add: adds values to an accumulated sum up to a limit

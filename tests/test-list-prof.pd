@@ -1,0 +1,18 @@
+#N canvas 971 404 500 212 10;
+#X msg 206 -15 1 2 3 4 5 4 3 2 1;
+#X obj 55 107 list-prof-+;
+#X obj 195 107 list-prof-x;
+#X obj 356 106 list-equalize;
+#X floatatom 118 79 5 0 8 0 - - -, f 5;
+#X floatatom 258 77 5 0 8 0 - - -, f 5;
+#X obj 356 128 print equal;
+#X obj 55 129 print prof-+;
+#X obj 195 129 print prof-x;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 7 0;
+#X connect 2 0 8 0;
+#X connect 3 0 6 0;
+#X connect 4 0 1 1;
+#X connect 5 0 2 1;

@@ -1,0 +1,18 @@
+#N canvas 395 612 450 300 10;
+#X msg 133 22 1 2 3 2 3 4 3 4 5 3 1;
+#X obj 92 150 aug-prof-+;
+#X msg 133 99 0 1 2;
+#X obj 92 212 print +;
+#X obj 252 151 aug-prof-x;
+#X obj 252 213 print x;
+#X msg 277 108 1 2;
+#X obj 290 181 array;
+#X obj 122 178 array;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 1 0 8 0;
+#X connect 2 0 1 1;
+#X connect 4 0 5 0;
+#X connect 4 0 7 0;
+#X connect 6 0 4 1;
