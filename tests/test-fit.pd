@@ -1,0 +1,10 @@
+#N canvas 855 293 450 300 10;
+#X obj 171 126 fit, f 12;
+#X floatatom 193 73 5 0 100 2 min - -, f 5;
+#X floatatom 267 71 5 0 100 2 max - -, f 5;
+#X obj 171 148 print FIT;
+#X msg 91 47 0 1 2 3 4 5;
+#X connect 0 0 3 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 4 0 0 0;
