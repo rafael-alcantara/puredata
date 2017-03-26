@@ -1,4 +1,4 @@
-#N canvas 432 202 1189 774 10;
+#N canvas 430 205 1189 774 10;
 #X obj 176 210 gen-fun;
 #X obj 97 6 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -356,6 +356,7 @@
 #X coords 0 0 1 1 85 60 0;
 #X restore 783 565 pd --- 3-2-1;
 #X msg 604 93 24;
+#X text 886 88 AVISO: TARDA EN ARRANCAR \, REQUIERE CÁLCULO;
 #X connect 0 0 29 2;
 #X connect 0 0 28 2;
 #X connect 0 0 30 3;
