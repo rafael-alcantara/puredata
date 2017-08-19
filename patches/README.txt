@@ -1,6 +1,7 @@
 Patches to generate lists of values:
 - gen-fun: generate from a function (expr)
 - gen-rnd: generate at random
+- fractal: generate fractal list from a function (expr)
 
 Patches to get items from a list:
 - list-next: get next item in sequence

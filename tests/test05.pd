@@ -1,4 +1,4 @@
-#N canvas 356 395 450 300 10;
+#N canvas 357 399 450 300 10;
 #X obj 169 230 print;
 #X obj 119 101 list-next;
 #X obj 286 106 list-rnd;
@@ -12,7 +12,7 @@
 #X connect 1 0 4 0;
 #X connect 2 0 5 0;
 #X connect 3 0 1 1;
-#X connect 3 0 2 1;
+#X connect 3 0 2 0;
 #X connect 6 0 1 0;
-#X connect 6 0 2 0;
+#X connect 6 0 2 1;
 #X connect 7 0 1 2;
