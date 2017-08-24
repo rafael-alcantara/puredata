@@ -9,8 +9,8 @@
 - list-item: wrapper to choose one of the above
 
 ### Patches to play notes:
-- play: plays a single note (using a metro, though)
-- play-lists: consumes lists for pitches, velocities and durations
+- play: plays a single note
+- play-lists: consumes lists for channels, pitches, velocities and durations
 
 ### Filters to apply to lists in order to get modified versions:
 - sublist: get a fragment of an existing list
