@@ -6,6 +6,7 @@
 ### Patches to get items from a list:
 - list-next: get next item in sequence
 - list-rnd: get one item at random
+- list-rnr: get one item at random without repeating any
 - list-item: wrapper to choose one of the above
 
 ### Patches to play notes:
@@ -20,6 +21,7 @@
 - aug-prof-+: expand individual values by summing a profile
 - aug-prof-x: expand individual values by multiplying a profile
 - fit: make the values fit some boundaries (scale [+ transport])
+- list-shuffle: shuffle items in a list
 
 ### Utility patches:
 - add: adds values to an accumulated sum up to a limit
