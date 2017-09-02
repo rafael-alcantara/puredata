@@ -2,6 +2,7 @@
 - gen-fun: generate from a function (expr)
 - gen-rnd: generate at random
 - fractal: generate fractal list from a function (expr)
+- scale: get a scale in MIDI pitches
 
 ### Patches to get items from a list:
 - list-next: get next item in sequence
@@ -9,9 +10,10 @@
 - list-rnr: get one item at random without repeating any
 - list-item: wrapper to choose one of the above
 
-### Patches to play notes:
+### Patches to play MIDI:
 - play: plays a single note
-- play-lists: consumes lists for channels, pitches, velocities and durations
+- play-lists: plays a sequence of notes. Consumes lists for channels, pitches, velocities and durations
+- play-ctl: also consumes lists, but to play midi controllers
 
 ### Filters to apply to lists in order to get modified versions:
 - sublist: get a fragment of an existing list
@@ -22,6 +24,7 @@
 - aug-prof-x: expand individual values by multiplying a profile
 - fit: make the values fit some boundaries (scale [+ transport])
 - list-shuffle: shuffle items in a list
+- list-shuffle-x: repeat a list shuffled differently every time
 
 ### Utility patches:
 - add: adds values to an accumulated sum up to a limit

@@ -1,0 +1,14 @@
+#N canvas 1259 363 450 300 10;
+#X obj 151 120 count;
+#X obj 248 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 65 59 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 61 215 print current;
+#X obj 205 219 print max;
+#X floatatom 65 15 5 1 10 0 - - -, f 5;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 1 0 0 2;
+#X connect 2 0 0 0;
+#X connect 5 0 0 1;
