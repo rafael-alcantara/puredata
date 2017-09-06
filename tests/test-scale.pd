@@ -1,0 +1,37 @@
+#N canvas 1411 430 450 300 10;
+#X obj 27 14 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 33 75 print A;
+#X obj 200 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 228 209 print B;
+#X floatatom 342 99 5 0 100 0 - - -, f 5;
+#X floatatom 376 134 5 0 24 0 - - -, f 5;
+#X obj 191 95 symbol HAR;
+#X obj 191 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 215 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 246 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 215 68 symbol MEL;
+#X obj 247 48 symbol WHO;
+#X obj 228 187 scale, f 16;
+#X obj 286 7 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 287 28 symbol CHR;
+#X obj 33 53 scale OCT 30 2;
+#X connect 0 0 15 0;
+#X connect 2 0 12 0;
+#X connect 4 0 12 2;
+#X connect 5 0 12 3;
+#X connect 6 0 12 1;
+#X connect 7 0 6 0;
+#X connect 8 0 10 0;
+#X connect 9 0 11 0;
+#X connect 10 0 12 1;
+#X connect 11 0 12 1;
+#X connect 12 0 3 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 1;
+#X connect 15 0 1 0;
