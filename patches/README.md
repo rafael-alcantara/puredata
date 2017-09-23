@@ -12,7 +12,8 @@
 
 ### Patches to play MIDI:
 - play: plays a single note
-- play-lists: plays a sequence of notes. Consumes lists for channels, pitches, velocities and durations
+- play-lists: [DEPRECATED use play-notes instead] plays a sequence of notes. Consumes lists for channels, pitches, velocities and durations
+- play-notes: plays a sequence of notes. Consumes lists for channels, pitches, velocities, silences and durations.
 - play-ctl: also consumes lists, but to play midi controllers
 
 ### Filters to apply to lists in order to get modified versions:
