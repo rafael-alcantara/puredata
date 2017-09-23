@@ -1,4 +1,4 @@
-#N canvas 573 253 557 565 10;
+#N canvas 502 191 557 565 10;
 #X obj 148 100 inlet;
 #X obj 53 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -29,8 +29,8 @@
 #X obj 264 363 list-next;
 #X floatatom 212 380 5 0 0 0 - - -, f 5;
 #X obj 187 363 list-rnr;
-#X connect 0 0 4 1;
 #X connect 0 0 25 1;
+#X connect 0 0 4 1;
 #X connect 0 0 27 1;
 #X connect 1 0 8 0;
 #X connect 3 0 9 0;
