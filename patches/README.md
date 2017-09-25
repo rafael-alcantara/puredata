@@ -26,9 +26,11 @@
 - fit: make the values fit some boundaries (scale [+ transport])
 - list-shuffle: shuffle items in a list
 - list-shuffle-x: repeat a list shuffled differently every time
+- list-intone: adjust a list of MIDI notes to a given scale
 
 ### Utility patches:
 - add: adds values to an accumulated sum up to a limit
 - count: counts messages up to a limit
 - list-concat: concatenate items/lists into a bigger list
+- intone: adjust one MIDI note to a given scale
 

@@ -1,0 +1,21 @@
+#N canvas 930 236 881 301 10;
+#X obj 212 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 212 85 scale DIA;
+#X msg 53 27 24 25 26 27 28 29 30 31 32 33 34 35 36;
+#X obj 104 224 print in tone;
+#X obj 104 202 list-intone;
+#X obj 292 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 372 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 292 85 scale CHR;
+#X obj 372 85 scale OCT;
+#X connect 0 0 1 0;
+#X connect 1 0 4 1;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 1;
+#X connect 8 0 4 1;
