@@ -1,21 +1,37 @@
-#N canvas 930 236 881 301 10;
-#X obj 212 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#N struct 1082-f float x;
+#N canvas 1022 253 518 301 10;
+#X obj 302 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 212 85 scale DIA;
+#X obj 302 85 scale DIA;
 #X msg 53 27 24 25 26 27 28 29 30 31 32 33 34 35 36;
-#X obj 104 224 print in tone;
 #X obj 104 202 list-intone;
-#X obj 292 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 382 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 372 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 462 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 292 85 scale CHR;
-#X obj 372 85 scale OCT;
+#X obj 382 85 scale CHR;
+#X obj 462 85 scale OCT;
+#X obj 286 215 list-map;
+#X obj 362 213 intone;
+#X obj 104 224 print in tone 1;
+#X obj 286 237 print in tone 2;
+#X obj 157 61 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 148 85 62 65 64 67 60 71 69;
 #X connect 0 0 1 0;
-#X connect 1 0 4 1;
-#X connect 2 0 4 0;
-#X connect 4 0 3 0;
+#X connect 1 0 3 1;
+#X connect 1 0 9 1;
+#X connect 2 0 3 0;
+#X connect 2 0 8 0;
+#X connect 3 0 10 0;
+#X connect 4 0 6 0;
 #X connect 5 0 7 0;
-#X connect 6 0 8 0;
-#X connect 7 0 4 1;
-#X connect 8 0 4 1;
+#X connect 6 0 3 1;
+#X connect 6 0 9 1;
+#X connect 7 0 3 1;
+#X connect 7 0 9 1;
+#X connect 8 0 11 0;
+#X connect 8 1 9 0;
+#X connect 9 0 8 1;
+#X connect 12 0 13 0;
+#X connect 13 0 3 1;
