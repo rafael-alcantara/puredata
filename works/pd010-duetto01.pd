@@ -1,5 +1,5 @@
-#N canvas 1221 125 457 358 10;
-#N canvas 52 227 1150 431 flute 0;
+#N canvas 1224 137 457 358 10;
+#N canvas 55 239 1150 431 flute 0;
 #X obj 263 264 fractal, f 19;
 #X msg 288 229 3;
 #X msg 366 229 0.5;
@@ -18,7 +18,7 @@
 #X msg 679 229 0;
 #X msg 719 229 127;
 #X msg 877 264 200 100;
-#X msg 139 307 1;
+#X msg 196 287 1;
 #X msg 949 264 RND;
 #X obj 1069 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -35,9 +35,11 @@
 #X obj 655 315 expr if ($i1 > 50 \, 1 \, 0);
 #X obj 582 315 list-map;
 #X obj 51 393 play-notes, f 146;
-#X obj 79 347 ctlout 10;
-#X msg 79 308 27;
-#X obj 95 279 t b b;
+#X obj 109 317 ctlout 10;
+#X msg 109 288 27;
+#X obj 125 259 t b b;
+#X obj 113 355 ctlout 7;
+#X msg 76 289 127;
 #X connect 0 1 29 4;
 #X connect 0 2 3 0;
 #X connect 0 3 3 1;
@@ -75,6 +77,7 @@
 #X connect 16 0 29 10;
 #X connect 17 0 29 2;
 #X connect 17 0 30 2;
+#X connect 17 0 33 2;
 #X connect 18 0 29 11;
 #X connect 19 0 29 14;
 #X connect 20 0 4 0;
@@ -90,9 +93,11 @@
 #X connect 28 1 27 0;
 #X connect 31 0 30 0;
 #X connect 32 0 31 0;
+#X connect 32 0 34 0;
 #X connect 32 1 17 0;
+#X connect 34 0 33 0;
 #X restore 116 236 pd flute;
-#N canvas 748 506 1150 431 violin 0;
+#N canvas 751 518 1150 431 violin 0;
 #X obj 263 264 fractal, f 19;
 #X msg 288 229 3;
 #X msg 366 229 0.5;
@@ -128,10 +133,12 @@
 #X msg 405 229 55;
 #X msg 602 229 5;
 #X msg 562 229 3;
-#X obj 85 314 ctlout 10;
-#X obj 101 246 t b b;
-#X msg 85 275 120;
-#X msg 145 274 6;
+#X obj 111 283 ctlout 10;
+#X obj 137 228 t b b;
+#X msg 111 257 120;
+#X msg 195 256 6;
+#X obj 112 326 ctlout 7;
+#X msg 73 257 127;
 #X connect 0 1 15 4;
 #X connect 0 2 3 0;
 #X connect 0 3 3 1;
@@ -182,24 +189,31 @@
 #X connect 28 0 7 2;
 #X connect 29 0 7 1;
 #X connect 31 0 32 0;
+#X connect 31 0 35 0;
 #X connect 31 1 33 0;
 #X connect 32 0 30 0;
 #X connect 33 0 15 2;
 #X connect 33 0 30 2;
+#X connect 33 0 34 2;
+#X connect 35 0 34 0;
 #X restore 226 236 pd violin;
 #X obj 116 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 226 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 226 114 t b b b b;
-#X obj 116 114 t b b b b;
+#X obj 266 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 335 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 116 114 t b b;
+#X obj 335 235 reset-ctls;
+#X text 336 127 stop;
+#X text 232 127 reset;
 #X connect 2 0 5 0;
-#X connect 3 0 4 0;
-#X connect 4 0 0 2;
-#X connect 4 1 1 2;
-#X connect 4 2 0 3;
-#X connect 4 3 1 3;
+#X connect 3 0 1 2;
+#X connect 3 0 0 2;
+#X connect 3 0 6 0;
+#X connect 4 0 1 3;
+#X connect 4 0 0 3;
 #X connect 5 0 0 0;
-#X connect 5 1 1 0;
-#X connect 5 2 0 1;
-#X connect 5 3 1 1;
+#X connect 5 0 1 0;
+#X connect 5 1 1 1;
+#X connect 5 1 0 1;
