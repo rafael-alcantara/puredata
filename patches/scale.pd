@@ -1,13 +1,13 @@
-#N canvas 389 113 935 933 10;
+#N canvas 390 117 935 933 10;
 #X msg 183 402 0 2 4 5 7 9 11;
 #X obj 474 869 list-math +;
 #X obj 28 625 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 474 847 list;
 #X obj 474 891 outlet;
-#X msg 283 333 0 2 3 5 6 8 9 11;
-#X msg 216 379 0 2 3 5 7 8 11;
-#X msg 249 356 0 2 3 5 7 9 11;
+#X msg 280 333 0 2 3 5 6 8 9 11;
+#X msg 215 379 0 2 3 5 7 8 11;
+#X msg 248 356 0 2 3 5 7 9 11;
 #X obj 336 647 zl slice;
 #X obj 336 669 list-math + 12;
 #X obj 396 619 t f b;
@@ -36,9 +36,10 @@
 #X text 217 17 Type of scale;
 #X text 523 15 Starting MIDI note;
 #X text 736 15 Starting scale grade;
-#X msg 316 310 0 2 4 6 8 10;
-#X msg 349 287 0 1 2 3 4 5 6 7 8 9 10 11;
-#X obj 183 178 route DIA HAR MEL OCT WHO CHR;
+#X msg 313 310 0 2 4 6 8 10;
+#X msg 345 287 0 1 2 3 4 5 6 7 8 9 10 11;
+#X obj 183 178 route DIA HAR MEL OCT WHO CHR PEN;
+#X msg 378 263 0 2 4 7 9;
 #X connect 0 0 14 0;
 #X connect 1 0 4 0;
 #X connect 2 0 3 0;
@@ -85,4 +86,6 @@
 #X connect 37 3 5 0;
 #X connect 37 4 35 0;
 #X connect 37 5 36 0;
-#X connect 37 6 0 0;
+#X connect 37 6 38 0;
+#X connect 37 7 0 0;
+#X connect 38 0 14 0;
