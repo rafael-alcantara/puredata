@@ -1,10 +1,10 @@
-#N canvas 1224 137 457 358 10;
-#N canvas 55 239 1150 431 flute 0;
+#N canvas 888 165 452 314 10;
+#N canvas 57 247 1312 444 flute 1;
 #X obj 263 264 fractal, f 19;
 #X msg 288 229 3;
 #X msg 366 229 0.5;
 #X obj 337 290 expr sin(6.2832*$i1/$i2);
-#X obj 317 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 407 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 317 132 t b b, f 32;
 #X msg 328 229 5;
@@ -20,21 +20,21 @@
 #X msg 877 264 200 100;
 #X msg 196 287 1;
 #X msg 949 264 RND;
-#X obj 1069 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1196 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 317 41 inlet configure;
+#X obj 937 41 inlet configure;
 #X obj 900 242 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 51 41 inlet play;
 #X obj 51 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 1069 41 inlet stop;
-#X obj 997 41 inlet reset;
-#X obj 997 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 655 315 expr if ($i1 > 50 \, 1 \, 0);
-#X obj 582 315 list-map;
-#X obj 51 393 play-notes, f 146;
+#X obj 1196 41 inlet stop;
+#X obj 1114 41 inlet reset;
+#X obj 1114 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 675 315 expr if ($i1 > 50 \, 1 \, 0);
+#X obj 602 315 list-map;
+#X obj 51 393 play-notes, f 164;
 #X obj 109 317 ctlout 10;
 #X msg 109 288 27;
 #X obj 125 259 t b b;
@@ -81,6 +81,7 @@
 #X connect 18 0 29 11;
 #X connect 19 0 29 14;
 #X connect 20 0 4 0;
+#X connect 20 0 29 12;
 #X connect 21 0 16 0;
 #X connect 21 0 18 0;
 #X connect 22 0 23 0;
@@ -96,13 +97,13 @@
 #X connect 32 0 34 0;
 #X connect 32 1 17 0;
 #X connect 34 0 33 0;
-#X restore 116 236 pd flute;
-#N canvas 751 518 1150 431 violin 0;
+#X restore 76 248 pd flute;
+#N canvas 498 526 1298 431 violin 1;
 #X obj 263 264 fractal, f 19;
 #X msg 288 229 3;
 #X msg 366 229 0.5;
 #X obj 337 290 expr sin(6.2832*$i1/$i2);
-#X obj 317 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 337 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 317 132 t b b, f 32;
 #X msg 445 229 96;
@@ -113,22 +114,22 @@
 #X msg 719 229 127;
 #X msg 877 264 200 100;
 #X msg 949 264 RND;
-#X obj 1069 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1175 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 51 363 play-notes, f 146;
-#X obj 317 41 inlet configure;
+#X obj 51 363 play-notes, f 161;
+#X obj 937 41 inlet configure;
 #X obj 900 242 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 51 41 inlet play;
 #X obj 51 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 1069 41 inlet stop;
-#X obj 997 41 inlet reset;
-#X obj 997 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 1175 41 inlet stop;
+#X obj 1094 41 inlet reset;
+#X obj 1094 97 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X msg 328 229 4;
-#X obj 640 315 expr if ($i1 > 50 \, 1 \, 0);
-#X obj 567 315 list-map;
+#X obj 668 315 expr if ($i1 > 50 \, 1 \, 0);
+#X obj 595 315 list-map;
 #X obj 297 179 t b b b, f 70;
 #X msg 405 229 55;
 #X msg 602 229 5;
@@ -171,6 +172,7 @@
 #X connect 13 0 15 11;
 #X connect 14 0 15 14;
 #X connect 16 0 4 0;
+#X connect 16 0 15 12;
 #X connect 17 0 12 0;
 #X connect 17 0 13 0;
 #X connect 18 0 19 0;
@@ -196,17 +198,19 @@
 #X connect 33 0 30 2;
 #X connect 33 0 34 2;
 #X connect 35 0 34 0;
-#X restore 226 236 pd violin;
-#X obj 116 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X restore 186 248 pd violin;
+#X obj 76 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 266 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 226 163 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 335 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 295 163 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 116 114 t b b;
-#X obj 335 235 reset-ctls;
-#X text 336 127 stop;
-#X text 232 127 reset;
+#X obj 76 76 t b b;
+#X obj 295 247 reset-ctls;
+#X text 296 145 stop;
+#X text 211 144 reset;
+#X msg 126 116 ms 314159;
+#X text 141 99 total duration;
 #X connect 2 0 5 0;
 #X connect 3 0 1 2;
 #X connect 3 0 0 2;
@@ -215,5 +219,6 @@
 #X connect 4 0 0 3;
 #X connect 5 0 0 0;
 #X connect 5 0 1 0;
-#X connect 5 1 1 1;
-#X connect 5 1 0 1;
+#X connect 5 1 9 0;
+#X connect 9 0 0 1;
+#X connect 9 0 1 1;
