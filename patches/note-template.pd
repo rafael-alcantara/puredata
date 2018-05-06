@@ -1,0 +1,3 @@
+#N canvas 275 190 450 300 10;
+#X obj 22 24 struct note float channel float silence float pitch float
+velocity float duration, f 14;
